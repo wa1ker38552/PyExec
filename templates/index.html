@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PyExec | Execute Python in your browser</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Code">
+    <link rel="stylesheet" href="/static/globals.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/highlights/theme.css">
+    <script src="/static/highlights/highlight.js"></script>
+    <script src="/static/highlights/py.js"></script>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="/static/script.js"></script>
+  </head>
+  <body>
+    <div style="position: relative">
+      <textarea spellcheck="false" oninput="highlight()" id="script"></textarea>
+      <pre><code id="highlight-area" class="language-py"></code></pre>
+    </div>
+    <div>
+      <button id="run-button" class="accented-button" onclick="execute()">Execute</button>
+    </div>
+    <pre id="terminal"></pre>
+  </body>
+</html>
