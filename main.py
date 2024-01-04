@@ -59,4 +59,4 @@ def terminate_script(id):
   if id in processes:
     processes[id].terminate()
 
-socket.run()
+socket.run(app)
